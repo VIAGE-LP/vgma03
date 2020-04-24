@@ -1,96 +1,97 @@
-* {
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif, 微軟正黑體;
-}
-
-body {
-    background: url(../img/bg_grid.jpg)repeat;
-}
-
-.top_fv {
-    padding-top: 60px;
-}
-
-.top_fvsp {
-    padding-top: 60px;
-}
-
-.container {
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 2%;
-    background-color: #fff;
-    padding: 0px;
-    padding-bottom: 1%;
-}
-
-.title {
+html,body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        border: none;
+    }
+.main {
     width: 100%;
-    height: 380px;
-    background-color: aqua;
+    margin: 0 auto;
+}
+.PC img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.SP img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.PC .offerbox{
+    position: relative;
+}
+
+.PC .offerbox .offerbtn{
+    position: absolute;
+    width: 20%;
+    display: block;
+    bottom: 11%;
+    right: 40%;
+}
+
+.SP .offerbox_m{
+    position: relative;
+}
+
+.SP .offerbox_m .offerbtn_m{
+    position: absolute;
+    width: 63%;
+    display: block;
+    right: 18%;
+    top: 47.5%;
+}
+
+.offerbtn:hover{
+    opacity: 0.8; 
+}
+
+@media screen and (max-width: 768px){
+    .SP .offerbtn{
+        margin: 0% auto 5% auto;
+        width: 58%;
+    }
+}
+
+.sns_btn {
     text-align: center;
-    padding-top: 100px;
+}
+.sns_btn ul li{
+    display: inline-block;
+    margin: 0 8px;
+    cursor: pointer;
 }
 
-section {
-    padding: 0 2%;
-}
-
-.navbar {
+.buybtn{
+    width: 174px;
     position: fixed;
-    width: 100%;
+    right: 0;
+    bottom: 20px;
+    z-index: 99;
+}
+.buybtn img{
+    width: 100%; 
+    height: auto;
 }
 
-img {
-    width: 100%;
-    margin: 0px;
+@media screen and (max-width: 768px){
+    .buybtn {
+        width: 28%;
+        max-width: 170px;
+    }
 }
 
-.question,
-h6 {
-    color: brown;
-}
-
-.text_red {
-    color: red;
-}
-
-/* p,
-h5,
-h6 {
-    line-height: 28px;
-    width: 80%;
-    margin: 0 auto;
-} */
-
-h5,
-h6 {
-    line-height: 28px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.text_down {
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.top_fvsp {
+.SP{
     display: none;
 }
-
-@media screen and (max-width: 770px) {
-    .btn-buy {
-        display: none;
-    }
-    .container {
-        font-size: 100%;
-        width: 100%;
-    }
-    .top_fvsp {
-        display: inherit;
-    }
-    .top_fv {
-        display: none;
-    }
+@media screen and (max-width: 768px){
+.PC{
+    display: none;
 }
+.SP{
+    display: block;
+}
+}
+
+
