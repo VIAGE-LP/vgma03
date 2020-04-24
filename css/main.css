@@ -199,7 +199,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .slick-dots {
     bottom: -28px;
     text-align: center;
@@ -431,7 +431,7 @@ input, option {
   z-index: 2;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 300px;
   }
@@ -476,7 +476,7 @@ input, option {
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #report {
     height: 474px;
   }
@@ -585,7 +585,7 @@ input, option {
   margin-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #report .ig_slider {
     width: 290px;
     margin-top: 0px;
@@ -620,7 +620,7 @@ input, option {
   transition: all ease-in-out 0.4s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #report a.ig_box {
     width: 100%;
     height: 412px;
@@ -679,7 +679,7 @@ input, option {
   color: #272938;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #report .ig_name {
     font-size: 0.5rem;
   }
@@ -699,7 +699,7 @@ input, option {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #report .ig_img {
     width: 100%;
     height: auto;
@@ -735,7 +735,7 @@ input, option {
   transition: all ease-in-out 0.4s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #report .btn_more_love {
     width: 45px;
   }
