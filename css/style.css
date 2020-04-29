@@ -27,7 +27,7 @@ html,body {
     position: absolute;
     width: 20%;
     display: block;
-    bottom: 11%;
+    bottom: 10%;
     right: 40%;
 }
 
@@ -40,7 +40,7 @@ html,body {
     width: 63%;
     display: block;
     right: 18%;
-    top: 47.5%;
+    top: 45.5%;
 }
 
 .offerbtn:hover{
