@@ -208,6 +208,41 @@
                         </noscript>
                     </a>
                 </div>
+
+                <!-- Button trigger modal -->
+                <!-- <a href="#" class="btn btn-primary"  data-toggle="modal" data-target="#exampleModalLong">ig_btn</a> -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6 modal_image">
+                                            
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h4 class="py-2 modal_name">${name}</h4>
+                                            <p class="modal_text">${text}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <a href="#size" class="btn btn-primary igbuy_btn">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <!-- ▲自由編集箇所▲ -->
         </div>
@@ -263,58 +298,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script> -->
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src='js/user_data.js'></script>
-    <!-- ig牆 -->
-    <script>
-        let html = ''
-
-        user_data.forEach(function ({ name, text, url }, index) {
-            html += `
-            <div>
-              <a href="${url}" target="_blank" class="ig_box">
-                <div class="ig_name">
-                  <span><img src="img/ig/ig_img${index + 1}.jpg"/></span>${name}
-                </div>
-                <img src="img/ig/ig_img${index + 1}.jpg" alt="" class="ig_img" />
-                <p>
-                  ${text}
-                </p>
-                <div class="btn_more">完整心得</div>
-                <div class="icon_heart"></div>
-                <div class="btn_more_love"></div>
-                <div class="btn_more_line"></div>
-              </a>
-            </div>
-    `
-        })
-
-        document.querySelector('.ig_slider').innerHTML = html
-        $(".ig_slider").slick({
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            arrows: true,
-            dots: true,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                        autoplay: true,
-                        dots: true,
-                        arrows: true,
-                    }
-                },
-            ]
-        });
-    </script>
+    <script src='js/ig.js'></script>
     <script src="js/all.js"></script>
 </body>
 
