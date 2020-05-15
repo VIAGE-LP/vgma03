@@ -19,6 +19,73 @@ html,body {
     margin: 0 auto;
 }
 
+.countdown_box{
+    position: relative;
+}
+
+.countdown{
+    position: absolute;
+    top: 5.3%;
+    right:26%;
+    color:white;
+    background-color: #D38996;
+    padding:1%;
+}
+.countdown li{
+    display: inline-block;
+    font-size: 3rem;
+}
+@media screen and (max-width: 1366px){
+    .countdown li{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 1024px){
+    .countdown li{
+        font-size: 1.6rem;
+    }
+
+}
+@media screen and (max-width: 800px){
+    .countdown li{
+        font-size: 1.2rem;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .countdown{
+        top: 7.8%;
+        right:15%;
+    }
+    .countdown li{
+        font-size: 2.3rem;
+    }
+
+}
+@media screen and (max-width: 667px){
+    .countdown li{
+        font-size: 2rem;
+    }
+
+}
+@media screen and (max-width: 414px){
+    .countdown li{
+        font-size: 1.2rem;
+    }
+
+}
+@media screen and (max-width: 375px){
+    .countdown{
+        top: 7.8%;
+        right:14%;
+    }
+    .countdown li{
+        font-size: 1.1rem;
+    }
+
+}
+
+
 .PC .offerbox{
     position: relative;
 }

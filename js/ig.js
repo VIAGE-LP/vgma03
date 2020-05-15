@@ -56,7 +56,7 @@ $(".igbuy_btn").click(function () {
 $('.modal_name').html("33l33l")
 $('.modal_text').html("有特殊立體弧線防止胸部下垂外擴腋下也有加高設計可以遮蔽副乳～重點是完全不會有不舒服的壓肩感也不會空杯跑位")
 
-$(".ig_box").click(function (e) { 
+$(".ig_box").click(function () { 
     var modal_image='';
     var modal_name='';
     var modal_text='';
@@ -64,6 +64,14 @@ $(".ig_box").click(function (e) {
     modal_name=$(this).find('.ig_name').text();
     modal_text=$(this).find('.ig_text').text();
     $('.modal_image').html(`<img src="${modal_image}" class="img-fluid " alt="">`);
+    $('.modal_face').html(`<img class="mr-3" src="${modal_image}" style="width: 64px; height:64px; border-radius:50%; border: solid rgb(0,0,0,0.2) 0.5px" alt="Generic placeholder image">`);
     $('.modal_name').html(modal_name);
     $('.modal_text').html(modal_text);
+    $(".modal_body a").attr("disabled",true); 
 });
+
+$(".modal_footer").click(function (e) { 
+  e.preventDefault();
+ 
+});
+
