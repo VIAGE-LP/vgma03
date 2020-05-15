@@ -23,77 +23,64 @@ html,body {
     position: relative;
 }
 
-.countdown{
+#countdown{
     position: absolute;
     top: 5.3%;
     right:24%;
     color:white;
     background-color: #D38996;
     padding:1%;
-}
-.countdown li{
-    display: inline-block;
     font-size: 3rem;
 }
+
 @media screen and (max-width: 1366px){
-    .countdown li{
+    #countdown{
         font-size: 2rem;
     }
 }
 @media screen and (max-width: 1080px){
-    .countdown{
+    #countdown{
         right:23%;
-    }
-    .countdown li{
         font-size: 1.6rem;
     }
-
 }
 @media screen and (max-width: 812px){
-    .countdown{
+    #countdown{
         right:23%;
-    }
-    .countdown li{
         font-size: 1.2rem;
     }
-
 }
 @media screen and (max-width: 768px){
-    .countdown{
+    #countdown{
         top: 7.8%;
         right:12%;
-    }
-    .countdown li{
         font-size: 2.3rem;
     }
 }
 @media screen and (max-width: 667px){
-    .countdown li{
+    #countdown{
         font-size: 2rem;
     }
 
 }
 @media screen and (max-width: 600px){
-    .countdown{
+    #countdown{
         right:7%;
     }
 
 }
 @media screen and (max-width: 414px){
-    .countdown li{
+    #countdown{
         font-size: 1.2rem;
     }
 
 }
 @media screen and (max-width: 375px){
-    .countdown{
+    #countdown{
         top: 7.8%;
         right:10%;
-    }
-    .countdown li{
         font-size: 1.1rem;
     }
-
 }
 
 

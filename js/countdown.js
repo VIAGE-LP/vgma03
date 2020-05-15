@@ -1,26 +1,59 @@
-const second =  1000,
-      minute = second * 60,
-      hour = minute * 60,
-      day = hour * 24;
+// JavaScript Document
+$(document).ready(function() {
 
-let countDown = new Date('May 20, 2020 23:59:59 GMT+0800').getTime(),
-    x = setInterval(function() {
+  window.setInterval(countDown, 1);
 
-      let now = new Date().getTime(),
-          distance = countDown - now;
+});
 
-      document.getElementById('days').innerText = Math.floor(distance / (day));
-        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour));
-        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute));
-        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-        document.getElementById('millisecond').innerText = Math.floor((distance % (second)));
-      //do something later when date is reached
-      if (distance < 0) {
-       clearInterval(x);
-        document.getElementById('days').innerText = 0;
-        document.getElementById('hours').innerText = 0;
-        document.getElementById('minutes').innerText = 0;
-        document.getElementById('seconds').innerText = 0;
-        document.getElementById('millisecond').innerText = 0;
-      }
-    }, second)
+
+function countDown() {
+  var now = new Date();
+  var future = new Date("05/20/2020 23:59:59");
+  var timeLeft = future - now;
+  var milli = timeLeft;
+
+  var mills = now.getMilliseconds();
+  var seconds = milli / 1000;
+  var minutes = seconds / 60;
+  var hours = minutes / 60;
+  var days = hours / 24;
+
+  var spareMills = mills.toString().substr(0, 2);
+  var spareSeconds = seconds % 60;
+  var spareMinutes = minutes % 60;
+  var spareHours = hours % 24;
+  var spareDays = days % 365;
+
+
+  minutes = parseInt(minutes);
+  hours = parseInt(hours);
+  days = parseInt(days);
+  spareSeconds = parseInt(spareSeconds);
+  spareMinutes = parseInt(spareMinutes);
+  spareHours = parseInt(spareHours);
+  spareDays = parseInt(spareDays);
+
+  days = padNumber(days);
+  hours = padNumber(hours);
+  minutes = padNumber(minutes);
+  spareSeconds = padNumber(spareSeconds);
+  spareMinutes = padNumber(spareMinutes);
+  spareHours = padNumber(spareHours);
+  spareDays = padNumber(spareDays);
+
+
+  timeLeft = spareDays + "天" + spareHours + "時" + spareMinutes + "分" + spareSeconds + "." + spareMills;
+  var mySpan = document.getElementById("countdown");
+  mySpan.innerHTML = timeLeft;
+
+  if (milli <= 0) { //Time's run out! If all values go to zero
+      mySpan.innerHTML = "00:00:00";
+  }
+}
+
+function padNumber(number) {
+  if (number < 10) {
+      number = "0" + number;
+  }
+  return number;
+}
