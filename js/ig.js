@@ -3,7 +3,7 @@ let html = '';
 user_data.forEach(function ({ name, text, url }, index) {
     html += `
             <div>
-              <a href="#" class="ig_box" data-toggle="modal" data-target="#exampleModalLong">
+              <a href="#" class="ig_box" data-toggle="modal" data-target="#exampleModalLong" data-index="${index}">
                 <div class="ig_name">
                   <span><img src="img/ig/ig_img${index + 1}.jpg"/></span>${name}
                 </div>
@@ -51,27 +51,31 @@ $(".igbuy_btn").click(function () {
     $(".modal-backdrop").remove();
 });
 
-    
-
-$('.modal_name').html("33l33l")
-$('.modal_text').html("有特殊立體弧線防止胸部下垂外擴腋下也有加高設計可以遮蔽副乳～重點是完全不會有不舒服的壓肩感也不會空杯跑位")
+// $('.modal_name').html("33l33l")
+// $('.modal_text').html("有特殊立體弧線防止胸部下垂外擴腋下也有加高設計可以遮蔽副乳～重點是完全不會有不舒服的壓肩感也不會空杯跑位")
 
 $(".ig_box").click(function () { 
     var modal_image='';
     var modal_name='';
     var modal_text='';
+    var modal_index = '';
+    var modal_hashtag = '';
+
+    modal_index = $(this).attr("data-index");
     modal_image=$(this).find('img').attr("src");
     modal_name=$(this).find('.ig_name').text();
-    modal_text=$(this).find('.ig_text').text();
+    modal_text = user_data[modal_index].modal_text;
+    modal_hashtag = user_data[modal_index].hashtag;
     $('.modal_image').html(`<img src="${modal_image}" class="img-fluid " alt="">`);
     $('.modal_face').html(`<img class="mr-3" src="${modal_image}" style="width: 64px; height:64px; border-radius:50%; border: solid rgb(0,0,0,0.2) 0.5px" alt="Generic placeholder image">`);
     $('.modal_name').html(modal_name);
     $('.modal_text').html(modal_text);
+    $('.modal_hashtag').html(modal_hashtag);
     $(".modal_body a").attr("disabled",true); 
 });
 
-$(".modal_footer").click(function (e) { 
-  e.preventDefault();
+// $(".modal_footer").click(function (e) { 
+//   e.preventDefault();
  
-});
+// });
 
