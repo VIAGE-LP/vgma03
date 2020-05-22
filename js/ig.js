@@ -1,13 +1,13 @@
 let html = '';
 
-user_data.forEach(function ({ name, text, url }, index) {
+user_data.forEach(function ({ name, text }, index) {
     html += `
             <div>
               <a href="#" class="ig_box" data-toggle="modal" data-target="#exampleModalLong" data-index="${index}">
                 <div class="ig_name">
                   <span><img src="img/ig/ig_img${index + 1}.jpg"/></span>${name}
                 </div>
-                <img src="img/ig/ig_img${index + 1}.jpg" alt="" class="ig_img" />
+                <img src="img/ig/ig_img${index + 1}.jpg" alt="" class="ig_img" id="${name}"/>
                 <p class="ig_text">
                   ${text}
                 </p>
@@ -60,22 +60,19 @@ $(".ig_box").click(function () {
     var modal_text='';
     var modal_index = '';
     var modal_hashtag = '';
+    var buyid = "";
 
     modal_index = $(this).attr("data-index");
     modal_image=$(this).find('img').attr("src");
     modal_name=$(this).find('.ig_name').text();
     modal_text = user_data[modal_index].modal_text;
     modal_hashtag = user_data[modal_index].hashtag;
+    buyid = user_data[modal_index].buyid;
     $('.modal_image').html(`<img src="${modal_image}" class="img-fluid " alt="">`);
     $('.modal_face').html(`<img class="mr-3" src="${modal_image}" style="width: 64px; height:64px; border-radius:50%; border: solid rgb(0,0,0,0.2) 0.5px" alt="Generic placeholder image">`);
     $('.modal_name').html(modal_name);
     $('.modal_text').html(modal_text);
     $('.modal_hashtag').html(modal_hashtag);
     $(".modal_body a").attr("disabled",true); 
+    $(".igbuy_btn").attr("id",buyid); 
 });
-
-// $(".modal_footer").click(function (e) { 
-//   e.preventDefault();
- 
-// });
-
