@@ -3,11 +3,11 @@ let html = '';
 user_data.forEach(function ({ name, text }, index) {
     html += `
             <div>
-              <a href="#" class="ig_box" data-toggle="modal" data-target="#exampleModalLong" data-index="${index}" id="${name}">
+              <a href="#" class="ig_box" data-toggle="modal" data-target="#exampleModalLong" data-index="${index}">
                 <div class="ig_name">
                   <span><img src="img/ig/ig_img${index + 1}.jpg"/></span>${name}
                 </div>
-                <img src="img/ig/ig_img${index + 1}.jpg" alt="" class="ig_img"/>
+                <img src="img/ig/ig_img${index + 1}.jpg" alt="" class="ig_img ${name}" id="${name}"/>
                 <p class="ig_text">
                   ${text}
                 </p>
