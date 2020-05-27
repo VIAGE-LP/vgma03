@@ -67,7 +67,7 @@ $(".ig_box").click(function () {
   modal_text = user_data[modal_index].modal_text;
   modal_hashtag = user_data[modal_index].hashtag;
   buyid = user_data[modal_index].buyid;
-  $('.modal_image').html(`<img src="${modal_image}" class="img-fluid " alt="">`);
+  $('.modal_image').html(`<img src="${modal_image}" class="modal_img_style mx-auto d-block" alt="">`);
   $('.modal_face').html(`<img class="mr-3" src="${modal_image}" style="width: 64px; height:64px; border-radius:50%; border: solid rgb(0,0,0,0.2) 0.5px" alt="Generic placeholder image">`);
   $('.modal_name').html(modal_name);
   $('.modal_text').html(modal_text);
