@@ -65,7 +65,7 @@ const SETTING_CHANGE_PRODUCT_CYCLE  = '';
 // - SETTING_PROMOTION_CODE
 //  => 使用する販促コードを指定する
 // **************************************************
-const SETTING_PROMOTION_CODE = 'vgma03b';
+const SETTING_PROMOTION_CODE = 'vgma03';
 
 // **************************************************
 // 商品プルダウンに表示される商品を設定する
@@ -158,7 +158,7 @@ const SETTING_REQUIRED_ZIP             = '1'; // 郵便番号
 //  => 購入完了時に表示させるページの指定を行う
 // ※未指定時はSystem設定で指定されたページへと遷移する
 // **************************************************
-const SETTING_THANKYOU_PAGE = 'https://viagebeautybra.com/shopping/thankyounext.html';
+const SETTING_THANKYOU_PAGE = '';
 
 // **************************************************
 // [スマホ版] コンビニ選択時の戻り先方法の設定

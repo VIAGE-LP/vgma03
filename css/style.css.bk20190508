@@ -54,14 +54,7 @@ h6 {
     color: red;
 }
 
-/* p,
-h5,
-h6 {
-    line-height: 28px;
-    width: 80%;
-    margin: 0 auto;
-} */
-
+p,
 h5,
 h6 {
     line-height: 28px;
