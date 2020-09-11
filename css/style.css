@@ -107,12 +107,12 @@
     margin: 0 auto;
     position: relative;
     width: 1024px;
-    height: 2564px;
+    height: 2721px;
     background-position: center;
 }
 .cta_3set_btn{
     position: absolute;
-    top: 1989px;
+    top: 2127px;
     left: 175px;
     width: 662px;
 }
@@ -122,7 +122,7 @@
 
 .cta_5set_btn{
     position: absolute;
-    top: 1326px;
+    top: 1382px;
     left: 175px;
     width: 662px;
 }
@@ -131,7 +131,7 @@
 }
 .cta_4set_btn{
     position: absolute;
-    top: 643px;
+    top: 692px;
     left: 175px;
     width: 662px;
 }
@@ -140,7 +140,7 @@
 }
 .cta_2set_btn{
     position: absolute;
-    bottom: 218px;
+    bottom: 231px;
     right: 189px;
     width: 260px;
 }
@@ -149,7 +149,7 @@
 }
 .cta_1set_btn{
     position: absolute;
-    bottom: 39px;
+    bottom: 50px;
     right: 189px;
     width: 260px;
 }
