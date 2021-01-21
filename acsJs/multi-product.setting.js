@@ -8,13 +8,13 @@ const PRODUCT_LIST = [
 	  image_url : '',
 	  product_id : 'A',
 	  image_urls : [
-			{ category1 : 'BL',  image_url : SETTING_DOMAIN_URL + '/access_form_sample/商品圖/海軍藍.jpg' },
-			{ category1 : 'BK',  image_url : SETTING_DOMAIN_URL + '/access_form_sample/商品圖/率性黑.jpg' },
-			{ category1 : 'RD',  image_url : SETTING_DOMAIN_URL + '/access_form_sample/商品圖/櫻花粉.jpg' },
-			{ category1 : 'LP',  image_url : SETTING_DOMAIN_URL + '/access_form_sample/商品圖/薰衣草紫.jpg' },
-			{ category1 : 'SL',  image_url : SETTING_DOMAIN_URL + '/access_form_sample/商品圖/天空藍.jpg' },
-			{ category1 : 'HB',  image_url : SETTING_DOMAIN_URL + '/access_form_sample/商品圖/異色黑.jpg' },
-			{ category1 : 'SG',  image_url : SETTING_DOMAIN_URL + '/access_form_sample/商品圖/寧靜灰.jpg' },
+			{ category1 : 'BL',  image_url : '商品圖/海軍藍.jpg' },
+			{ category1 : 'BK',  image_url : '商品圖/率性黑.jpg' },
+			{ category1 : 'RD',  image_url : '商品圖/櫻花粉.jpg' },
+			{ category1 : 'LP',  image_url : '商品圖/薰衣草紫.jpg' },
+			{ category1 : 'SL',  image_url : '商品圖/天空藍.jpg' },
+			{ category1 : 'HB',  image_url : '商品圖/異色黑.jpg' },
+			{ category1 : 'SG',  image_url : '商品圖/寧靜灰.jpg' },
 
 	  ]
 	},

@@ -44,7 +44,7 @@ function countDown() {
 
   // timeLeft = spareDays  + "天" + spareHours + "時" + spareMinutes + "分" + spareSeconds + "." + spareMills;
   var mySpan = document.getElementById("countdown");
-  mySpan.innerHTML = `${spareDays}<span class="unit">天</span> ${spareHours}<span class="unit">時</span> <span class="SP_br"></span>${spareMinutes}<span class="unit">分</span> ${spareSeconds}.${spareMills} <span class="SP_none">多樣好禮滿額抽</span>`;
+  mySpan.innerHTML = `${spareDays}<span class="unit">天</span> ${spareHours}<span class="unit">時</span> ${spareMinutes}<span class="unit">分</span> ${spareSeconds}.${spareMills}`;
 
   if (milli <= 0) { //Time's run out! If all values go to zero
       mySpan.innerHTML = "00:00:00";
