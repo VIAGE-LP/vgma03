@@ -65,7 +65,7 @@ const SETTING_CHANGE_PRODUCT_CYCLE  = '';
 // - SETTING_PROMOTION_CODE
 //  => 使用する販促コードを指定する
 // **************************************************
-const SETTING_PROMOTION_CODE = 'vgma01b';
+const SETTING_PROMOTION_CODE = 'vgma03b';
 
 // **************************************************
 // 商品プルダウンに表示される商品を設定する
@@ -78,14 +78,16 @@ const SETTING_PROMOTION_CODE = 'vgma01b';
 // - cycle
 //  => 定期配送サイクル
 // **************************************************
-const SETTING_PRODUCT_LIST = [{
-  code: '',
-  name: '',
-  isRegular: '0',
-  cycle: '',
-  defaultVal: '',
-  visible: 1
-}];
+const SETTING_PRODUCT_LIST = [
+    {
+        code: "",
+        name: "",
+        isRegular: "0",
+        cycle: "",
+        defaultVal: "",
+        visible: 1
+    }
+];
 
 // **************************************************
 // 初期値の設定
