@@ -1,190 +1,67 @@
-.carousel-item{
-    transition: transform 0.1s ease-in-out,-webkit-transform 0.1s ease-in-out;
-}
-#color_carousel_1 .carousel-control-prev{
-    background-color: black;
-    width: 3%;
-    margin-left: 3.5%;
-   }
-#color_carousel_1 .carousel-control-next{
-    background-color: black;
-    width: 3%;
-    margin-right: 3.8%;
-}
-
-.navbar{
-    background-color: #0F1F4A;
-    position: fixed;
-    z-index: 100;
+html,body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        border: none;
+    }
+.main {
     width: 100%;
-}    
-.navbar a{
-    text-decoration: none;
+    margin: 0 auto;
 }
-  
-.nav-link.logo-router h1{
-    margin: 0px;
+.PC img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
-  
-.logo{
-  width: 103px;
-  height: 55px;
-  background-image: url(../images/logo.png);
-  display: block;
-  text-indent: 101%;
-  overflow: hidden;
-  white-space: nowrap;
-  background-repeat: no-repeat;
+.SP img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
-.nav-link.logo-router{
-    padding: 0;
+.PC .offerbox{
+    position: relative;
+}
+
+.PC .offerbox .offerbtn{
+    position: absolute;
+    width: 20%;
+    display: block;
+    bottom: 10%;
+    right: 40%;
+}
+
+.SP .offerbox_m{
+    position: relative;
+}
+
+.SP .offerbox_m .offerbtn_m_1{
+    position: absolute;
+    width: 63%;
+    display: block;
+    right: 18%;
+    top: 46%;
+}
+
+.SP .offerbox_m .offerbtn_m_2{
+    position: absolute;
+    width: 63%;
+    display: block;
+    right: 18%;
+    bottom: 2%;
+}
+
+.offerbtn:hover{
+    opacity: 0.8; 
 }
 
 @media screen and (max-width: 768px){
-    .nav-link.logo-router h1 {
-       display: none;
-      }
-}
-.nav-link.logo-router h5{
-    display: inline-block;
-    padding: 16px 0 16px 16px;
-    margin: 0px;
-    color: white;
+    .SP .offerbtn{
+        margin: 0% auto 5% auto;
+        width: 58%;
+    }
 }
 
-
-.navbar-light .navbar-nav .nav-link {
-  background-color: #15285F;
-  color: white;
-  font-size: 1rem;
-  padding: 1em 2em;
-  border-left: 1px solid #475578;
-}
-@media screen and (max-width: 768px){
-    .navbar-light .navbar-nav .nav-link {
-        border-top: 1px solid #475578;
-        padding: 0.8em 1em;
-      }
-}
-
-.navbar-light .navbar-nav .nav-link:focus{
-    background-color: #2E689E;
-    color: white;
-}
-.navbar-light .navbar-nav .nav-link:hover{
-    background-color: #2E689E;
-    color: white;
-}
-.navbar-light .navbar-nav .nav-link .menutext{
-    background-color: #2E689E;
-    color: white;
-}
-.navbar-toggler {
-    padding: 0.25rem 9px;
-}
-
-/* PC */
-.set3{
-    margin: 0 auto;
-    position: relative;
-    width: 1024px;
-    height: 585px;
-    background-position: center;
-}
-
-.set3_btn {
-    position: absolute;
-    right: 238px;
-    width: 554px;
-    bottom: 63px;
-}
-.set3_btn:hover{
-    opacity: 0.8;
-}
-
-.all_set{
-    margin: 0 auto;
-    position: relative;
-    width: 1024px;
-    height: 2854px;
-    background-position: center;
-}
-.cta_3set_btn{
-    position: absolute;
-    top: 2272px;
-    left: 175px;
-    width: 662px;
-}
-.cta_3set_btn:hover{
-    opacity: 0.6;
-}
-
-.cta_5set_btn{
-    position: absolute;
-    top: 1421px;
-    left: 175px;
-    width: 662px;
-}
-.cta_5set_btn:hover{
-    opacity: 0.6;
-}
-.cta_4set_btn{
-    position: absolute;
-    top: 736px;
-    left: 175px;
-    width: 662px;
-}
-.cta_4set_btn:hover{
-    opacity: 0.6;
-}
-.cta_2set_btn{
-    position: absolute;
-    bottom: 224px;
-    right: 189px;
-    width: 260px;
-}
-.cta_2set_btn:hover{
-    opacity: 0.6;
-}
-.cta_1set_btn{
-    position: absolute;
-    bottom: 44px;
-    right: 189px;
-    width: 260px;
-}
-.cta_1set_btn:hover{
-    opacity: 0.8;
-}
-.power_area{
-    margin: 0 auto;
-    position: relative;
-    width:1024px;
-    height: 2110px;
-    background: url(../images/06_power.jpg);
-    background-position: center;
-    background-size: 100%;
-}
-
-
-.future_area{
-    margin: 0 auto;
-    position: relative;
-    width: 1060px;
-    height: 1869px;
-    background: url(../images/10_future.jpg);
-    background-position: center;
-    background-size: 100%;
-}
-.future_btn{
-    position: absolute;
-    top: 953px;
-    left: 250px;
-    width: 557px;
-}
-.future_btn:hover{
-    opacity: 0.6;
-}
 .sns_btn {
     text-align: center;
 }
@@ -213,23 +90,35 @@
     }
 }
 
-.NewyearInfo img{
-    width: 720px;
+.modal_img_style{
+    max-width: 100%;
+    height:auto;
 }
 @media screen and (max-width: 768px){
-    .NewyearInfo img{
-        width: 100%;
+    .modal_img_style{
+        max-width: 70%;
+    }
+}
+@media screen and (max-width: 768px){
+    .media-body{
+        height: 21vh;
+        overflow:auto;
+    }
+    .modal{
+        top:60px;
     }
 }
 
-.mobile{
+.SP{
     display: none;
 }
 @media screen and (max-width: 768px){
 .PC{
     display: none;
 }
-.mobile{
+.SP{
     display: block;
 }
 }
+
+
